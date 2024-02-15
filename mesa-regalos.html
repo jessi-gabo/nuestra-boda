@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Jessi & Gabo</title>
+    <meta name="description" content="Nos gustaría invitarte a nuestro gran día.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Jessica & Gabriel se casan">
+    <meta property="og:description" content="Nos gustaría invitarte a nuestro gran día.">
+    <meta property="og:image" content="img/portada.png">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>  
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="css/gifts.css">
+    <link rel="stylesheet" href="css/modal.mesa.regalos.css">
+    <link rel="stylesheet" href="css/my.styles.css">
+
+</head>
+
+
+<body id="presents">
+    <section class="sect-gifts">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="index.html#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="header-nav">
+                        <nav style="font-weight: bold;">
+                            <ul class="primary-nav">
+                                <li><a href="index.html#intro">¿Cómo nos conocimos?</a></li>
+                                <li><a href="index.html#events">Eventos</a></li>
+                                <li><a href="index.html#instagram">Instagram</a></li>
+                                <li><a href="index.html#eng-pics">Compromiso</a></li>
+                                <!--
+                                    <li class="hidden-sm hidden-xs"><a href="#video-bg">Vislumbre de la ciudad</a></li>
+                                -->
+                                
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="index.html#gift-table" class="login">Mesa de regalos</a></li>
+                                <li><a href="index.html#rsvp" class="btn-white btn-small">Confirmación</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </section> 
+
+
+   
+   <section id="section-presents" style="background: #f8f9fd;">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-12 text-center table-presents">
+                    <div class="row" >
+                        <div class="col-md-2 col-lg-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <h1>Mesa de Regalos</h1>
+                            <p class="text-center">
+                                A los novios no les gusta que te obliguen a comprar regalos en un lugar en específico,
+                                por eso aparta el regalo o los regalos que les quieras dar con tu código de invitado y compralo 
+                                dónde quieras. <br>
+                                Si prefieres puedes enviarlo a la siguiente dirección:     
+                            </p>
+                            <a id="btn-direccion" class="btn btn-accent btn-large rsvp-btn">Ver dirección</a>
+                            
+                        </div>
+                        <div class="col-md-2 col-lg-2"></div>
+
+                    </div>
+                    <div id="gift-list" style="background: #fff;">
+                         <!-- Los regalos se mostrarán aquí  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Modal para Direccion -->
+    <div id="dirModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="content">
+            <div class="modal-content" >
+                <div class="modal-body">
+                    <button  type="button" class="close" data-dismiss="modal" aria-label="Close" style="display: block;">
+                        <span>&times;</span>
+                    </button>
+                    <p></p>
+                    <p class="modalText">
+                        Calle: Gob Cristobal Solano 126 <br>
+                        Colonia: Granjas Valle de Guadalupe <br>
+                        C.P. 55270 <br>
+                        Ecatepec de Morelos, Edo. Mex. <br>
+                        Tel. 55 20662434
+                    </p>
+                    <a class="btn btn-accent btn-small fa fa-map-marker" id="verMapaDir">Ver Mapa</a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- Diálogo Modal para Código -->
+    <div id="codeModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="content">
+            <div class="modal-content" >
+                <div class="modal-body">
+                    <button  type="button" class="close" data-dismiss="modal" aria-label="Close" style="display: block;">
+                        <span>&times;</span>
+                    </button>
+                    <p></p>
+                    <p class="modalText">Por favor, introduce tu código para apartar el regalo:</p>
+                    <input type="text" id="codeInput" style="color: black;">
+                    <button class="btn btn-accent btn-small" id="submitCode">Enviar</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal de Error -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="display: block;">
+                    <span>&times;</span>
+                </button>
+                <p></p>
+                <p id="errorMessage" class="modalText"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal de Message -->
+    <div id="waitModalGiftsTable" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-content" role="document" >
+            <div class="modal-body">
+                <p id="waitMessage" class="modalText"></p>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Gift pantalla de carga -->
+    <div id="loadingGifContainerGiftsTable" style="display: none;">
+        <div class="loadingGif">
+            <img src="img/fancybox_loading.gif" alt="Cargando...">
+            <p id="loadingGifTextGiftsTable">Cargando...</p>
+        </div>
+    </div>
+    
+
+    <div id="loadingGifContainer" style="display: none;">
+        <div class="loadingGif">
+            <img src="img/fancybox_loading.gif" alt="Cargando...">
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p style="text-align: center;">Creado por Gabo con todo mi <span class="fa fa-heart pulse2"></span> para Jessi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.count-time.js"></script>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.js"></script> <!-- js/scripts.min.js -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46465113-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
