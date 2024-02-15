@@ -17,12 +17,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <style>
         body {
-            background: url('img/portada1.png') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            @media (max-width: 767px) {
+                background: url('img/portadaloggin.jpg') no-repeat center center fixed ;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            @media (min-width: 767px) {
+                background-color: beige;
+                background: url('img/portadaloggin.jpg') no-repeat center center fixed ;
+                background-color: black;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;   
+            }
         }
         .login-container {
             background: rgba(255, 255, 255, 0.8);
