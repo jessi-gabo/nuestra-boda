@@ -48,15 +48,16 @@
   }
 
   #myCarousel .f-carousel__slide {
-    padding: 50px;
+    padding: 5px;
     background: #eee;
   }
  #myCarousel .f-carousel__slide img {
     max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 70vh; /* Limita la altura máxima de la imagen */
+    max-height: 45vh; /* Limita la altura máxima de la imagen */
     object-fit: contain; /* Mantiene la imagen dentro de su contenedor */
 }
+
 
 .parents-godfathers {
     background: #f8f9fd;
@@ -64,7 +65,8 @@
 }
 
 
-  /* CSS para imagen papás y padrinos */
+
+  /* CSS para imagen de texto  "papás y padrinos" */
   
   @media (max-width: 767px) {
     .padres-names {
