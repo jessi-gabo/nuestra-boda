@@ -516,7 +516,7 @@ $(document).ready(function () {
             success: function(response) {
                 if (response.valid) {
                     hideLoadingGifLoggin();
-                    window.location.href = 'index.html?code=' + inviteCode;
+                    window.location.href = 'invitacion.html?code=' + inviteCode;
                     $('#inviteCode').val(''); // Limpia el input
 
 

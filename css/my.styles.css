@@ -44,12 +44,13 @@
 /*----- Carousel ------*/
 #myCarousel {
     --f-carousel-spacing: 10px;
-    --f-carousel-slide-width: 80%;
+    --f-carousel-slide-width: 70%;
   }
 
   #myCarousel .f-carousel__slide {
     padding: 5px;
     background: #eee;
+    margin-top: 10px;
   }
  #myCarousel .f-carousel__slide img {
     max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
