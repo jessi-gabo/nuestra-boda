@@ -544,7 +544,7 @@ $(document).ready(function () {
     // Controlador para redireccionar al hacer clic en 'verMapaDir'
     $('#verMapaDir').click(function() {
         // Reemplaza 'tuURLDeGoogleMaps' con tu URL real
-        window.location.href = 'https://maps.app.goo.gl/NYFyCGs8a1WCnDn76';
+        window.location.href = 'https://maps.app.goo.gl/uVAFHwe2Ms1TpxBu9';
     });
 
 /********************** Mesa de regalos **********************/
