@@ -196,7 +196,7 @@ $(document).ready(function () {
             title: "Boda de Jessi y Gabo",
 
             // Event start date
-            start: new Date('May 25, 2024 15:30'),
+            start: new Date('May 25, 2024 15:45'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -206,10 +206,10 @@ $(document).ready(function () {
             end: new Date('May 26, 2024 01:00'),
 
             // Event Address
-            address: 'Parroquia San Juan Bautista, Coyoacan',
+            address: 'Parroquia San Juan Bautista, Coyoacán',
 
             // Event Description
-            description: "No podemos esperar para verte ese gran día. Para cualquier duda o pregunta, favor de enviar mensaje al +52 20662434."
+            description: "No podemos esperar para verte en este gran día. Para cualquier duda o pregunta, favor de enviar mensaje al +52 55 20662434."
         }
     });
 
