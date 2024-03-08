@@ -485,16 +485,29 @@
 </section>
 
 
-
+<!--Enlace a mi vídeo de regalos https://www.youtube.com/watch?v=MhVhjnwN96U&ab_channel=GabrielSolis 
 <section id="video-bg">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://www.youtube.com/watch?v=MhVhjnwN96U&ab_channel=GabrielSolis',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+         data-property="{videoURL:'img/video.mp4',
+         containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:259, opacity:1}">
     </div>
     <div id="video-content">
         <h5>J&G</h5>
         <p style="text-align: center;">La pareja del año</p>
     </div>
 </section>
+-->
+<section id="video-bg" style="position: relative; width: 100%; height: 480px; overflow: hidden;">
+    <video id="bgndVideo" autoplay muted loop style="position: absolute; width: 100%; left: 0; top: 0; height: 100%; object-fit: cover;">
+        <source src="img/video.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div id="video-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; color: #FFF;">
+        <h5>J&G</h5>
+        <p style="text-align: center;"></p>
+    </div>
+</section>
+
 
 
 <section id="gift-table" class="section-padding gift-table">
@@ -682,7 +695,11 @@
 <!-- Terminan scripts para fancybox-->
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+
+<script src="js/jquery.mb.YTPlayer.js"></script>
+<!-- El jquery original para Youtube 
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
+-->
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.js"></script> <!-- js/scripts.min.js -->
 <script async defer
