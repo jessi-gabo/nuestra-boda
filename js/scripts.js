@@ -729,7 +729,11 @@ document.addEventListener('DOMContentLoaded', function() {
             var row = table.insertRow();
             row.innerHTML = `
                 <td data-label="Nombre del Regalo" style=" font-size: 24px;">${gift.name}</td>
-                <td data-label="Imagen"><img src="${gift.url}" alt="${gift.name}" style="width:150px; height:150px;"></td>
+                <td data-label="Imagen">
+                    <a data-fancybox="gallery" href="${gift.url}" data-caption="${gift.name}">
+                        <img src="${gift.url}" alt="${gift.name}" style="width:150px; height:150px;">
+                    </a>
+                </td>
                 <td data-label="Estado" id="status-${index}"><span class="${statusClass}">${gift.booked ? 'Apartado' : 'Disponible'}</span></td>
                 <td><button class="btn btn-accent btn-small" onclick="toggleStatus(${index}, '${gift.name}')">${gift.booked ? 'Liberar' : 'Apartar'}</button></td>
             `;

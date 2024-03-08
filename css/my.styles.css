@@ -106,3 +106,10 @@
 #blessing p {
     text-align: center;
 }
+
+/* Centrar nombre de imagenes en mesa-regalos cuando se abre con fancybox*/
+  .fancybox__caption {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
