@@ -54,15 +54,16 @@
     </script>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/>
+
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/my.styles.css">
     
     
@@ -427,65 +428,41 @@
                 <h3 class="header">Imágenes de la pedida</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             <div class="col-md-2">
-                <a  data-fancybox="gallery" href="img/eng_pics/familia-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/familia-sm.jpg" alt=""/>
-                    </div>
+                <a  data-fancybox="gallery" href="img/eng_pics/familia-sm.jpg">
+                    <img src="img/eng_pics/familia-lg.jpg" alt=""/>
+
                 </a>
             </div>
             <div class="col-md-2">
-                <a data-fancybox="gallery" href="img/eng_pics/juntos-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/juntos-sm.jpg" alt=""/>
-                    </div>
+                <a data-fancybox="gallery" href="img/eng_pics/juntos-sm.jpg">
+                    <img src="img/eng_pics/juntos-lg.jpg" alt=""/>
+
                 </a>
             </div>
             <div class="col-md-2">
-                <a data-fancybox="gallery" href="img/eng_pics/pedida-lg.png">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/pedida-sm.png" alt=""/>
-                    </div>
+                <a data-fancybox="gallery" href="img/eng_pics/pedida-sm.png">
+                    <img src="img/eng_pics/pedida-lg.png" alt=""/>
+
                 </a>
             </div>
             <div class="col-md-2">
-                <a data-fancybox="gallery" href="img/eng_pics/manos-lg.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/manos-sm.jpg" alt=""/>
-                    </div>
+                <a data-fancybox="gallery" href="img/eng_pics/vera-sm.png">
+                    <img src="img/eng_pics/vera-lg.png" alt=""/>
+
                 </a>
             </div>
             <div class="col-md-2">
-                <a data-fancybox="gallery" href="img/eng_pics/sonrisa-lg.jpeg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/sonrisa-sm.jpeg" alt=""/>
-                    </div>
+                <a data-fancybox="gallery" href="img/eng_pics/sonrisa-sm.jpeg">
+                    <img src="img/eng_pics/sonrisa-lg.jpeg" alt=""/>
+
                 </a>
             </div>
             <div class="col-md-2">
-                <a data-fancybox="gallery" rel="group" href="img/eng_pics/vera-lg.png">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/vera-sm.png" alt=""/>
-                    </div>
+                <a data-fancybox="gallery" rel="group" href="img/eng_pics/vera-sm.png">
+                    <img src="img/eng_pics/vera-lg.png" alt=""/>
+
                 </a>
             </div>
         </div>
@@ -698,13 +675,20 @@
 <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
 <script src="js/jquery.fancybox.pack.js"></script> 
+
+
+<!-- Terminan scripts para fancybox-->
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.js"></script> <!-- js/scripts.min.js -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 <!-- Scripts para fancybox-->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <!-- Este es para el carrusel -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
-
-
-
 <script>
     new Carousel(document.getElementById("myCarousel"), {
       Autoplay : {
@@ -724,15 +708,6 @@
       //
     });    
 </script>
-
-<!-- Terminan scripts para fancybox-->
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.js"></script> <!-- js/scripts.min.js -->
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
